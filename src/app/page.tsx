@@ -89,7 +89,7 @@ export default function Home() {
             className="w-[140px]"
             type="submit"
             // NOTE: disable this in non-dev envs so people won't use up credits in the deployed version
-            disabled={runQuery.isLoading || !isDev}
+            disabled={runQuery.isLoading}
           >
             {runQuery.isLoading ? 'Researching...' : 'Submit'}
           </Button>
